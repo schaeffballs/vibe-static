@@ -1,22 +1,98 @@
-body{margin:0;font-family:Arial,sans-serif;background:#f4f4f4;color:#222}
-.hero{text-align:center;padding:90px 20px;background:linear-gradient(135deg,#4f46e5,#9333ea);color:#fff}
-.features{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;padding:40px}
-.card{background:#fff;padding:20px;border-radius:10px;width:260px;box-shadow:0 6px 18px rgba(0,0,0,.12);text-align:center}
-button{padding:10px 16px;border:0;border-radius:8px;cursor:pointer;background:#111;color:#fff}
-.dark-mode{background:#111;color:#fff}
-.dark-mode .card{background:#1f1f1f}
+/* ============================= */
+/* GLOBAL RESET */
+/* ============================= */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ============================= */
+/* HERO SECTION */
+/* ============================= */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #4f46e5, #9333ea);
+    color: white;
+}
 
 .hero h1 {
+    margin-bottom: 10px;
     opacity: 0;
-    transform: translateY(40px);
-    animation: fadeInUp 2s ease forwards;
+    transform: translateY(50px);
+    animation: fadeInUp 3s ease forwards;
 }
 
-@keyframes fadeInUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.hero p {
+    margin-bottom: 20px;
+    font-size: 18px;
 }
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background: black;
+    color: white;
+    font-size: 14px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* ============================= */
+/* FEATURE CARDS */
+/* ============================= */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+/* ============================= */
+/* DARK MODE */
+/* ============================= */
+.dark-mode {
+    background-color: #111;
+    color: white;
+}
+
+.dark-mode .card {
+    background-color: #1f1f1f;
+}
+
+.dark-mode button {
+    background: white;
+    color: black;
+}
+
+/* ================*
 
 

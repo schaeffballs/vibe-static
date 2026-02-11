@@ -1,0 +1,7 @@
+body{margin:0;font-family:Arial,sans-serif;background:#f4f4f4;color:#222}
+.hero{text-align:center;padding:90px 20px;background:linear-gradient(135deg,#4f46e5,#9333ea);color:#fff}
+.features{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;padding:40px}
+.card{background:#fff;padding:20px;border-radius:10px;width:260px;box-shadow:0 6px 18px rgba(0,0,0,.12);text-align:center}
+button{padding:10px 16px;border:0;border-radius:8px;cursor:pointer;background:#111;color:#fff}
+.dark-mode{background:#111;color:#fff}
+.dark-mode .card{background:#1f1f1f}
